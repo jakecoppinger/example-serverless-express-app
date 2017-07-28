@@ -1,0 +1,29 @@
+{
+  "name": "example-serverless-express-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node main.js",
+    "deploy": "serverless deploy",
+    "serverless-dev": "serverless offline start --port=3000",
+    "logs": "serverless logs --function thefunction"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakecoppinger/example-serverless-express-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakecoppinger/example-serverless-express-app/issues"
+  },
+  "homepage": "https://github.com/jakecoppinger/example-serverless-express-app#readme",
+  "dependencies": {
+    "aws-serverless-express": "^3.0.2",
+    "express": "^4.15.3",
+    "serverless": "^1.18.1",
+    "serverless-offline": "^3.15.3",
+    "serverless-plugin-include-dependencies": "^2.1.2"
+  }
+}
