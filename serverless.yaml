@@ -8,10 +8,13 @@ provider:
   region: ap-southeast-2
 
 functions:
-  thefunction:
+  express:
     handler: lambda.handler
     events:
       - http: ANY {proxy+}
+      - http:
+          path: /
+          method: ANY
 
 plugins:
     - serverless-offline
